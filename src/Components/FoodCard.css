@@ -1,0 +1,19 @@
+.foodcard {
+  width: 250px;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: antiquewhite;
+}
+.food_image {
+  width: 100%;
+  border-radius: 8px;
+}
+.food_name_wrapper {
+  background-color: white;
+}
+.food_name {
+  text-align: center;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 7px;
+}

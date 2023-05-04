@@ -1,0 +1,17 @@
+.searchbar {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  margin: 0.6rem auto;
+  border-radius: 5px;
+  height: 22px;
+  width: 70%;
+  color: gray;
+  background-color: #eef3f8;
+}
+.searchbar > input {
+  width: 100%;
+  background: none;
+  border: none;
+  outline: none;
+}
