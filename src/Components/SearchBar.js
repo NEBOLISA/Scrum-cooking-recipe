@@ -10,7 +10,7 @@ function SearchBar() {
         type="text"
       />
       <button className="searchbar_button">
-        <p>Search</p>
+        <span>Search</span>
         <ArrowOutwardOutlinedIcon className="material_arrow" />
       </button>
     </div>

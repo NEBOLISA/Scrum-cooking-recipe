@@ -17,7 +17,7 @@ function PopularCategories() {
       {
         breakpoint: 700,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 3,
           slidesToScroll: 1,
           dots: false,
         },

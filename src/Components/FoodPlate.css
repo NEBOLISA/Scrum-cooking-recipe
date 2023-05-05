@@ -1,4 +1,11 @@
 .foodplate {
+  width: 100px;
+}
+.foodplate:hover {
+  cursor: pointer;
+}
+.food_wrapper {
+  width: 100px;
 }
 .food_wrapper img {
   width: 100px;

@@ -1,8 +1,11 @@
 import React from "react";
 import "./FirstSection.css";
 import FoodCard from "./FoodCard";
+import { useServiceProviderValue } from "../ServiceProvider";
 
 function FirstSection() {
+  const [{ popularFood }, dispatch] = useServiceProviderValue();
+  const tagRegExp = new RegExp("<s*[^>]*>", "g");
   return (
     <div className="firstsection">
       <div className="heading_div">
@@ -10,9 +13,9 @@ function FirstSection() {
         <p>View All</p>
       </div>
       <div className="cards">
-        <FoodCard />
-        <FoodCard />
-        <FoodCard />
+        {popularFood?.recipes.map((item) => (
+          <FoodCard item={item} />
+        ))}
       </div>
 
       <div className="heading_div latest_recipe">
@@ -20,9 +23,9 @@ function FirstSection() {
         <p>View All</p>
       </div>
       <div className="cards">
-        <FoodCard />
-        <FoodCard />
-        <FoodCard />
+        {popularFood?.recipes.map((item) => (
+          <FoodCard item={item} />
+        ))}
       </div>
     </div>
   );

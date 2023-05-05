@@ -3,33 +3,33 @@ import "./FoodCard.css";
 import RemoveRedEyeOutlinedIcon from "@mui/icons-material/RemoveRedEyeOutlined";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 import ShareOutlinedIcon from "@mui/icons-material/ShareOutlined";
-function FoodCard() {
+import { useServiceProviderValue } from "../ServiceProvider";
+function FoodCard({ item }) {
+  const [{ popularFood }, dispatch] = useServiceProviderValue();
+  const tagRegExp = new RegExp("<s*[^>]*>", "g");
   return (
-    <div className="foodcard">
-      <img
-        className="food_image"
-        src="https://www.chefspencil.com/wp-content/uploads/Top-21-Nigerian-Foods-.jpg"
-        alt=""
-      />
-      <div className="wrapper_div">
-        <div className="food_category_name_div">
-          <p>Rice Recipe</p>
+    <React.Fragment>
+      <div className="foodcard">
+        <img className="food_image" src={item?.image} alt="" />
+        <div className="wrapper_div">
+          <div className="food_category_name_div">
+            <p>{item?.title}</p>
+          </div>
+          <div className="action_btn_div">
+            <ShareOutlinedIcon className="materialshare" />
+            <FavoriteBorderOutlinedIcon className="materialfav" />
+          </div>
         </div>
-        <div className="action_btn_div">
-          <ShareOutlinedIcon className="materialshare" />
-          <FavoriteBorderOutlinedIcon className="materialfav" />
-        </div>
+        <h1 className="food_name">{item?.title}</h1>
+        <p className="short_description">
+          {(item.summary = item.summary.replace(tagRegExp, "")).slice(0, 150)}
+        </p>
+        <button className="food_card_button">
+          <p>View all</p>
+          <RemoveRedEyeOutlinedIcon className="materialeye" />
+        </button>
       </div>
-      <h1 className="food_name">Jollof Rice</h1>
-      <p className="short_description">
-        Jollof Rice is a beloved favorite in Nigeria and beyond!The magic of
-        egusi soup lies in its essence...
-      </p>
-      <button className="food_card_button">
-        <p>View all</p>
-        <RemoveRedEyeOutlinedIcon className="materialeye" />
-      </button>
-    </div>
+    </React.Fragment>
   );
 }
 
