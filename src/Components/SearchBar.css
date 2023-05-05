@@ -1,17 +1,55 @@
-.searchbar {
-  padding: 10px;
-  display: flex;
-  align-items: center;
-  margin: 0.6rem auto;
-  border-radius: 5px;
-  height: 22px;
-  width: 70%;
-  color: gray;
-  background-color: #eef3f8;
+* {
+  font-family: "Poppins", sans-serif;
 }
-.searchbar > input {
+.searchbar {
+  display: flex;
+  gap: 10px;
+  border-radius: 5px;
   width: 100%;
-  background: none;
+  color: gray;
+}
+input {
+  width: 100%;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
+  background-color: white;
   border: none;
   outline: none;
+}
+
+.searchbar_button {
+  outline: none;
+  border: none;
+  background: none;
+  display: flex;
+  gap: 10px;
+  background-color: #ff9c33;
+  border-radius: 6px;
+  padding: 0.75rem 1.4rem;
+}
+.searchbar_button p {
+  border-radius: 6px;
+  padding-top: 3px;
+  color: white;
+  font-weight: 600;
+  font-size: 160px;
+  padding-bottom: 0;
+}
+.searchbar_button:hover {
+  cursor: pointer;
+}
+.material_arrow {
+  color: white;
+}
+@media (max-width: 767px) {
+  .searchbar {
+    flex-direction: column;
+    width: 80%;
+  }
+  .button_wrapper {
+    width: fit-content;
+    margin: 0 auto;
+  }
 }

@@ -1,0 +1,7 @@
+.foodplate {
+}
+.food_wrapper img {
+  width: 100px;
+  border: 10px solid #ff9c33;
+  border-radius: 50%;
+}
