@@ -1,0 +1,32 @@
+.firstsection {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.heading_div {
+  display: flex;
+  padding-bottom: 0.3rem;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+.heading_div h1 {
+  color: #ff9c33;
+  font-size: 32px;
+}
+.heading_div p {
+  color: #ff9c33;
+}
+.heading_div p:hover {
+  cursor: pointer;
+}
+
+.latest_recipe {
+  margin-top: 4rem;
+}
+.cards {
+  display: grid;
+  grid-auto-rows: 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  place-items: center;
+}

@@ -1,19 +1,75 @@
 .foodcard {
-  width: 250px;
+  margin-top: 1rem;
+  width: 400px;
   border-radius: 5px;
-  padding: 10px;
-  background-color: antiquewhite;
+  padding: 1rem;
+  box-shadow: 1px 1px 4px 3px rgb(188, 188, 188);
 }
 .food_image {
   width: 100%;
-  border-radius: 8px;
+  border-radius: 1px;
 }
-.food_name_wrapper {
-  background-color: white;
+.wrapper_div {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.food_category_name_div {
+  background-color: #ffe4c7;
+  border-radius: 20px;
+  padding: 0.3rem 1rem;
+}
+.food_category_name_div p {
+  margin: 0;
+}
+
+.action_btn_div {
+  display: flex;
+  gap: 1rem;
+}
+.action_btn_div:nth-child(1) {
+}
+
+.action_btn_div:nth-child(2) {
+}
+.materialfav {
+  color: #ff9c33;
+}
+.materialshare {
+  color: #eb4747;
+}
+.materialshare:hover {
+  cursor: pointer;
+}
+.materialfav:hover {
+  cursor: pointer;
 }
 .food_name {
-  text-align: center;
   font-weight: 600;
   text-transform: uppercase;
-  padding: 7px;
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+.food_card_button {
+  outline: none;
+  border: none;
+  background-color: #ff9c33;
+  display: flex;
+  gap: 10px;
+  border-radius: 6px;
+  padding: 0.75rem 1.4rem;
+}
+.food_card_button:hover {
+  cursor: pointer;
+}
+.food_card_button p {
+  margin: 0;
+  background: none;
+  border-radius: 6px;
+  color: white;
+  font-weight: 600;
+}
+.foodcard .materialeye {
+  color: white;
 }
