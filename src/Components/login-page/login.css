@@ -1,0 +1,179 @@
+
+.bk-color{
+   background-color: #fff;
+  
+}
+.bk-weight{
+    padding: 10px 60px;
+  
+}
+.logo{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 150%;
+    font-family: 'Lato', sans-serif;
+}
+.flec-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+     font-family: 'Lato', sans-serif;
+}
+.flec-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:10px;
+}
+.btn-1{
+    outline: none;
+    border: none;
+    padding: 12px 32px;
+    display: flex;
+    justify-content: space-between;
+    background: #FF9C33;
+    align-items: flex-start;
+    color: #fff;
+    border-radius: 6px;
+    gap:10px;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+}
+.login{
+    outline: none;
+    border: none;
+}
+.icon{
+    outline: none;
+    font-size: 21px;
+    border: none;
+    border-radius: 50%;
+}
+
+
+.first-login{
+    border: 1px solid green;
+     background: linear-gradient(80deg, rgb(0, 48, 73, 0.35) 22.7%, rgba(256, 256, 256, 0)),
+     url(../../assests/Rectangle\ 7.png) no-repeat center center / cover;
+     
+}
+.body{
+    /* border: 1px solid #000; */
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    padding: 36px 30px 40px;
+    gap: 24px;
+    background-color: #fff;
+    width: 485px;
+    height: 606px;
+    font-family: 'Lato', sans-serif;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.body h2{
+    text-align: center;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 38px;
+    margin: 10px 0px;
+}
+.width-checker{
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.google-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 16px;
+    gap: 12px;
+    background: #FFFFFF;
+    border: 1px solid #BAAB9C;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 8px;
+
+
+}
+.google-title img{
+    
+    width: 25.26px;
+    height:20.78px;
+}
+.dash{
+ margin: 20px 0px;
+
+}
+
+.form-folder{
+    margin-top:20px;
+    /* border: 1px solid darkblue; */
+    text-align: center;
+
+}
+
+form div{
+display: flex;
+/* border: 1px solid firebrick; */
+flex-direction: column;
+/* justify-content: center;
+align-items: center; */
+padding: 10px 20px 10px;
+gap: 8px;
+border-radius: 12px;
+}
+form div label{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 15px;
+    display:flex;
+    justify-content: flex-start;
+}
+form div input{
+    display: flex;
+    border: 1px solid #D0D5DD;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px 14px;
+    width: 400px;
+    background: #FFFFFF;
+    height: 25px;
+    border-radius: 12px;
+}
+form p{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 20px;
+        color: #344054;
+        display: flex;
+        justify-content: flex-start;
+        }
+.btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.btn button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    background:#FF9C33;
+    height: 30px;
+    text-align: center;
+    border-radius: 12px;
+    color: #fff;
+    padding: 20px 20px;
+    outline: none;
+    font-family: 'Lato', sans-serif;
+/* border: none; */
+}

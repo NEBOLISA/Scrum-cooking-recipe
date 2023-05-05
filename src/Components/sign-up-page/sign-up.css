@@ -1,0 +1,83 @@
+*{
+    padding: 0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+.sign-up{
+    /* border: 1px solid #000; */
+    background: linear-gradient(80deg, rgb(0, 48, 73, 0.35) 22.7%, rgba(256, 256, 256, 0)),
+    url(../../assests/Rectangle\ 7.png) no-repeat center center / cover;
+    height:100vh;
+}
+.sign-up-cover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px 20px;
+    margin-top: 100px;
+}
+.sign-up-body{
+    /* border: 1px solid #000; */
+    background-color:#fff;
+    padding: 10px 20px 10px;
+    gap: 8px;
+    border-radius: 5px;
+}
+.sign-up-body h2{
+    text-align: center;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 38px;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 20px;
+}
+.input-details{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px 10px;
+    gap: 10px;
+    border-radius: 12px;
+}
+.input-details div label{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        display:flex;
+        gap: 10px;
+        justify-content: flex-start;
+ }
+ .input-details div input{
+        display: flex;
+        border: 1px solid #D0D5DD;
+        flex-direction: row;
+        align-items: center;
+        padding: 10px 14px;
+        width: 420px;
+        background: #FFFFFF;
+        height: 40px;
+        border-radius: 12px;
+ }
+ .btn-comp{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+ }
+ .btn-comp button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 420px;
+    background:#FF9C33;
+    height: 30px;
+    text-align: center;
+    border-radius: 12px;
+    color: #fff;
+    padding: 20px 20px;
+    outline: none;
+    font-family: 'Lato', sans-serif;
+ }
