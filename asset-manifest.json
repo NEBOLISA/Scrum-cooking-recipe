@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/Scrum-cooking-recipe/static/css/main.874077b2.css",
+    "main.js": "/Scrum-cooking-recipe/static/js/main.8b348e68.js",
+    "static/js/787.7277fa26.chunk.js": "/Scrum-cooking-recipe/static/js/787.7277fa26.chunk.js",
+    "static/media/header_image.png": "/Scrum-cooking-recipe/static/media/header_image.53b6525dda18f33aa5dd.png",
+    "static/media/middle-section-background.avif": "/Scrum-cooking-recipe/static/media/middle-section-background.4f3b9c6f2101ff94ebd2.avif",
+    "index.html": "/Scrum-cooking-recipe/index.html",
+    "main.874077b2.css.map": "/Scrum-cooking-recipe/static/css/main.874077b2.css.map",
+    "main.8b348e68.js.map": "/Scrum-cooking-recipe/static/js/main.8b348e68.js.map",
+    "787.7277fa26.chunk.js.map": "/Scrum-cooking-recipe/static/js/787.7277fa26.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.874077b2.css",
+    "static/js/main.8b348e68.js"
+  ]
+}
