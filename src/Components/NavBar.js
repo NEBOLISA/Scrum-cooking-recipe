@@ -4,6 +4,7 @@ import "./NavBar.css";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 import CloseOutlinedIcon from "@mui/icons-material/CloseOutlined";
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
+import { Link } from "react-router-dom";
 
 function NavBar() {
   /*const navRef = useRef();**/
@@ -43,10 +44,12 @@ function NavBar() {
         </ul>
       </div>
       <div className="right_nav">
-        <div className="login_button_div">
-          <p>Log In</p>
-          <AccountCircleOutlinedIcon className="account_icon" />
-        </div>
+        <Link to="/signup" className="link">
+          <div className="login_button_div">
+            <p>Log In</p>
+            <AccountCircleOutlinedIcon className="account_icon" />
+          </div>
+        </Link>
       </div>
       {/*
       <button className="nav_btn nav-close-btn" onClick={showNavBar}>
