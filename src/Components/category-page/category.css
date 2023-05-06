@@ -1,0 +1,86 @@
+*{
+    padding: 0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+.page-container{
+    border: 1px solid red;
+}
+.first-session-background-image{
+    border: 1px solid rgb(40, 129, 230);
+    background-color: #fff;
+}
+.first-session-width-checker{
+    border: 1px solid rgb(0, 255, 68);
+    padding: 10px 20px 10px;
+}
+nav{
+    display: flex;
+}
+nav div{
+    border: 1px solid rgb(255, 0, 81);
+}
+nav div a{
+    text-decoration: none;
+    display: inline;
+}
+nav div a li{
+    display:inline;
+    text-decoration: none;
+    padding-left: 35px;
+    padding-right: 20px;
+}
+.contact-logo{
+    
+    padding: 10px;
+    width: 100px;
+    text-align: center;
+    border-radius: 5px;
+    background-color:  #FF9C33;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+}
+.face-logo{
+    font-size: 20px;
+   margin-left: 5px;
+}
+.second-session{
+    background: linear-gradient(45deg, rgba(37, 41, 45, 0.35) 35.7%, rgba(256, 256, 256, 0)),
+    url(../../assests/Categories.jpg) no-repeat center center / cover;
+}
+.second-child-session{
+    text-align: center;
+    padding:80px 0px 100px;
+    color: #fff;
+}
+.second-child-session h2{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+}
+.second-child-session p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px
+}
+.third-child-session{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.third-child-session img{
+    border-radius:50%;
+}
+.third-child-session p{
+    text-align: center;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 150%;
+    color:#fff;
+}

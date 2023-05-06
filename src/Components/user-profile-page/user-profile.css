@@ -1,0 +1,163 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+   
+}
+.first-section-container{
+    background: linear-gradient(45deg, rgba(37, 41, 45, 0.35) 35.7%, rgba(256, 256, 256, 0)),
+     url(../../assests/Rectangle\ 30.jpg) no-repeat center center / cover;
+   
+    
+}
+.first-width-checker{
+    padding: 20px 50px 20px;
+}
+nav{
+    /* border: 1px solid saddlebrown; */
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+    align-items: center;
+}
+nav div{
+    border: none !important;
+}
+.text{
+    border: 2px solid orange;
+    padding: 20px 10px;
+}
+.class-list a{
+    text-decoration: none;
+    display: inline;
+    color: #000;
+}
+
+.class-list a li{
+    display:inline;
+    list-style: none;
+   justify-content: space-between;
+   margin-right: 50px;
+    flex-direction: row;
+}
+.setting-contact{
+    display: flex;
+    margin-left: 10px;
+    justify-content: space-evenly;
+    color:gray;
+    font-size: 20px;
+  
+    width: 60px;
+}
+.first-container-second-child{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.first-container-second-child div{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    width: 400px;
+}
+.first-container-second-child div span{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 15%;
+}
+.first-container-second-child div img{
+    border-radius: 50%;
+    font-size: 200px;
+}
+.first-container-third-child{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+    text-align: center;
+}
+.first-container-third-child div{
+    padding: 5px;
+   
+}
+
+.first-container-last-child{
+    display: flex;
+    margin: 50px 0px 100px;
+    justify-content: center;
+    align-items: center;
+   
+}
+.first-container-last-child span{
+    margin-right: 10px;
+}
+
+.e{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1px;
+}
+.second-width-checker{
+    padding: 20px 50px 20px;
+}
+.first-wrapper{
+    display: flex;
+    justify-content:space-between;
+}
+
+.first-child-wrapper h1{
+    color:#FF9C33;
+    margin-bottom: 30px;
+}
+.first-childs-child-wrapper{
+   
+    padding: 10px 20px 10px;
+    box-shadow: 0px 6px 12px 5px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+}
+.first-childs-child-wrapper h4{
+    margin: 10px 0px ;
+   
+}
+.first-childs-child-wrapper p{
+    margin: 10px 0px;
+}
+.first-childs-child-wrapper input{
+    width: 300px;
+    padding: 5px;
+    height: 34px;
+}
+.first-wrapper p{
+    line-height: 30px;
+    color: gray;
+}
+.sub{
+  
+    width:200px;
+    padding:5px 5px;
+    text-align: center;
+    border-radius: 5px;
+    color: #fff;
+    background-color:#FF9C33;
+}
+.footer{
+   display: inline;
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+   text-transform: capitalize;
+}
+.footer div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}

@@ -2,7 +2,7 @@ import React from "react";
 import NavBar from "../nav-bar-log-sign";
 import images from "../../assests/icons8-google-48.png";
 import line from "../../assests/Lines.png";
-
+import './login.css';
 export default function Loginpage() {
   return (
     <>
