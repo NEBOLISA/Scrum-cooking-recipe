@@ -2,12 +2,12 @@ import React from "react";
 import NavBar from "../nav-bar-log-sign";
 import images from "../../assests/icons8-google-48.png";
 import line from "../../assests/Lines.png";
+import { Link } from "react-router-dom";
 
 export default function Loginpage() {
   return (
     <>
-    
-     <div className="first-login">
+      <div className="first-login">
         <NavBar />
         <div className="width-checker">
           <div className="body">
@@ -22,7 +22,7 @@ export default function Loginpage() {
               <img src={line} alt="line-1" />
             </div>
             <div className="form-folder">
-              <form >
+              <form>
                 <div>
                   <label>Full name*</label>
                   <input type="text" placeholder="Enter your full name here" />
@@ -38,7 +38,9 @@ export default function Loginpage() {
                 </div>
               </form>
               <div className="btn">
-                <button> Sign up</button>
+                <Link to="/homepage" className="link">
+                  <button> Sign up</button>
+                </Link>
               </div>
             </div>
           </div>

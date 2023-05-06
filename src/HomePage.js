@@ -6,7 +6,13 @@ import Header from "./Components/Header";
 import FirstSection from "./Components/FirstSection";
 import PopularCategories from "./Components/PopularCategories";
 import axios from "axios";
+import YouTubeIcon from "@mui/icons-material/YouTube";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import InstagramIcon from "@mui/icons-material/Instagram";
 import { useServiceProviderValue } from "./ServiceProvider";
+import { Input } from "@mui/material";
 
 function HomePage() {
   const [{ popularFood }, dispatch] = useServiceProviderValue();
@@ -30,6 +36,79 @@ function HomePage() {
 
       <FirstSection />
       <PopularCategories />
+      <footer>
+        <h1 className="title">chop naija</h1>
+        <div className="down_part">
+          <div className="take_action_div">
+            <h2>Stay updated!</h2>
+            <p className="first">
+              Don't miss any more of our fresh recipes and advice.
+            </p>
+            <p>Subcribe to our newsletter!</p>
+            <div className="send_div">
+              <Input type="text" placeholder="Enter your email address here" />
+              <button>Subscribe Now</button>
+            </div>
+          </div>
+          <div className="links">
+            <ul>
+              <h2 className="links_titles">Home</h2>
+              <li>
+                <a href="">Categories</a>
+              </li>
+              <li>
+                <a href="">Blog </a>
+              </li>
+              <li>
+                <a href="">About Us</a>
+              </li>
+              <li>
+                <a href="">Contact Us</a>
+              </li>
+              <div className="social_div">
+                <p>Follow Us</p>
+                <div className="social_icons">
+                  <FacebookIcon />
+                  <YouTubeIcon />
+                  <TwitterIcon />
+                  <WhatsAppIcon />
+                  <InstagramIcon />
+                </div>
+              </div>
+            </ul>
+            <ul>
+              <h2 className="links_titles">Category</h2>
+              <li>
+                <a href="">Rice Recipes</a>
+              </li>
+              <li>
+                <a href="">Soup Recipes</a>
+              </li>
+              <li>
+                <a href=""> Plaintain recipes</a>
+              </li>
+              <li>
+                <a href="">Small Chops</a>
+              </li>
+            </ul>
+            <ul>
+              <h2 className="links_titles">Recently added</h2>
+              <li>
+                <a href="">Tuwo Shinkafa</a>
+              </li>
+              <li>
+                <a href="">Banga Soup</a>
+              </li>
+              <li>
+                <a href="">Ogbono soup</a>
+              </li>
+              <li>
+                <a href="">Afang soup</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }

@@ -13,7 +13,7 @@ function FirstSection() {
         <p>View All</p>
       </div>
       <div className="cards">
-        {popularFood?.recipes.map((item) => (
+        {popularFood?.recipes?.map((item) => (
           <FoodCard item={item} />
         ))}
       </div>
@@ -23,7 +23,7 @@ function FirstSection() {
         <p>View All</p>
       </div>
       <div className="cards">
-        {popularFood?.recipes.map((item) => (
+        {popularFood?.recipes?.map((item) => (
           <FoodCard item={item} />
         ))}
       </div>

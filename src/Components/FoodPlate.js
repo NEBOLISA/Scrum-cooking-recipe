@@ -12,6 +12,7 @@ function FoodPlate() {
             alt=""
           />
         </div>
+        <p className="foodplate_name"> Small chops</p>
       </div>
     </div>
   );

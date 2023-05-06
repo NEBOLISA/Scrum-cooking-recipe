@@ -13,14 +13,14 @@ function FoodCard({ item }) {
         <img className="food_image" src={item?.image} alt="" />
         <div className="wrapper_div">
           <div className="food_category_name_div">
-            <p>{item?.title}</p>
+            <p>{`${item?.title.slice(0, 20)}...`}</p>
           </div>
           <div className="action_btn_div">
             <ShareOutlinedIcon className="materialshare" />
             <FavoriteBorderOutlinedIcon className="materialfav" />
           </div>
         </div>
-        <h1 className="food_name">{item?.title}</h1>
+        <h1 className="food_name">{`${item?.title.slice(0, 30)}...`}</h1>
         <p className="short_description">
           {(item.summary = item.summary.replace(tagRegExp, "")).slice(0, 150)}
         </p>

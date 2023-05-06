@@ -2,6 +2,10 @@
   position: relative;
   margin-bottom: 2rem;
 }
+.nav {
+  position: fixed;
+  z-index: 200;
+}
 .header .banner {
   width: 100%;
   height: 600px;
