@@ -17,6 +17,26 @@ import { Input } from "@mui/material";
 function HomePage() {
   const [{ popularFood }, dispatch] = useServiceProviderValue();
   const [food, setFood] = useState("");
+
+  const getRecipe = async () => {
+    const response = await axios.get(
+      `	https://food-recipes-dwor.onrender.com/api/v1/recipes`,
+      {
+        headers: {
+          Authorization:
+            "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjY0NTVkMDFhZjc1NzQwMTAyY2IzOGM2NyIsIm5hbWUiOiJ0ZXN0IGZvbyIsImVtYWlsIjoidGVzdEBnbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQwOSRQNVV2cjJ5RnZ1TFhkSDNwbEkzUlcuTVJtZVRWdUd1aE9VNlhhZklYMFc4RmdnUnd3QnB6ZSIsInByb2ZpbGVQaWN0dXJlIjoiaHR0cHM6Ly9hcGkuZGljZWJlYXIuY29tLzUueC9sb3JlbGVpLW5ldXRyYWwvc3ZnP3NlZWQ9dGVzdC0yOWNqeS1nbWFpbC0zemJ3Mi1jb20mc2l6ZT0yMDAmcmFkaXVzPTUwIiwicm9sZSI6InZpc2l0b3IiLCJjcmVhdGVkQXQiOiIyMDIzLTA1LTA2VDAzOjU3OjE0LjU0OVoiLCJ1cGRhdGVkQXQiOiIyMDIzLTA1LTA2VDAzOjU3OjE0LjU0OVoiLCJfX3YiOjB9LCJpYXQiOjE2ODMzNDU0NTQsImV4cCI6MTY4MzQzMTg1NH0.R0HeZICfFIU3ktdt3PCDhWV4tVidfaGynPhIUpFap6s",
+          "Content-Type": "application/json",
+        },
+      }
+    );
+    console.log(response);
+
+    /* dispatch({
+      type: "DEFAULT_PLAYLIST",
+      playlistName: response.data.items[1].name,
+    });*/
+  };
+
   const getPopular = async () => {
     const api = await fetch(
       `https://api.spoonacular.com/recipes/random?apiKey=b6da314e14d74d4b8bf75af9d9fd9825&number=3`
@@ -26,6 +46,7 @@ function HomePage() {
     console.log(data);
   };
   useEffect(() => {
+    getRecipe();
     getPopular();
     console.log(food);
   }, []);
